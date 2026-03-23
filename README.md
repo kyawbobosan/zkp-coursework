@@ -1,60 +1,23 @@
-# ZKP Challenge Assistant (Coursework Submission)
+# Zero-Knowledge Proof (ZKP) Implementation Framework
+**MSc Cybersecurity | Edinburgh Napier University**
 
-This repository contains the final implementation of a Zero-Knowledge Proof (ZKP) challenge-response assistant developed for the MSc Cybersecurity Applied Cryptography module.
+## 🛡️ Project Overview
+This repository contains a specialized framework for **Zero-Knowledge Proofs (ZKP)**, focusing on the implementation of **Sigma Protocols** and **Pedersen Commitments**. The goal is to demonstrate "Proof of Knowledge" for sensitive attributes without exposing the underlying data, ensuring absolute cryptographic privacy.
 
-## 🔐 Features
+## 🚀 Technical Highlights
+* **Commitment Schemes**: Implementation of Pedersen Commitments for information hiding and binding.
+* **Sigma Protocols**: Developed 3-move interactive proofs (Commitment, Challenge, Response).
+* **Security Analysis**: Evaluation of the Soundness and Zero-Knowledge properties of the implemented protocols.
 
-- Implements Schnorr-based ZKP challenge-response
-- Accepts user-supplied or randomly generated secrets
-- Verifies knowledge without revealing the secret
-- Generates:
-  - ✅ Verification results
-  - 📝 Logs in `.txt`, `.csv`, `.json`
-  - 📊 Summary chart (via matplotlib)
-  - 📦 Archived ZIP logs (optional)
-- Supports `--headless` mode (skip chart for automation)
+## 💻 Tech Stack
+* **Language**: Python 3.12
+* **Libraries**: `ecdsa`, `cryptography`
+* **Workflow**: Git-scrubbed history for production-ready codebase.
 
-## 📁 Folder Structure
-
-```
-📁 core/
-│   └── zkp_challenge.py
-📁 logs/
-│   ├── zkp_log.txt
-│   ├── zkp_log.csv
-│   └── zkp_log.json
-📄 Zero_Knowledge_Proofs-Coursework.docx
-📄 README.md
-```
-
-## ▶️ How to Run
-
-1. Install required packages:
-   ```
-   pip install matplotlib pandas
-   ```
-
-2. Run the script:
-   ```
-   python core/zkp_challenge.py
-   ```
-
-3. To run without showing the chart (headless mode):
-   ```
-   python core/zkp_challenge.py --headless
-   ```
-
-## 📦 Output Files
-
-- `zkp_log.txt` – Plain text audit trail
-- `zkp_log.csv` – Structured CSV log
-- `zkp_log.json` – Machine-readable JSON
-- `logs/` – All logs stored and optionally zipped
-
-## 📄 Submission
-
-All coursework material, code, and logs are included in this repository.
+## 🛠️ Setup
+1. `python -m venv venv`
+2. `.\venv\Scripts\activate`
+3. `pip install -r requirements.txt`
 
 ---
-
-🎓 *Developed by Kyaw San for MSc Cybersecurity (Napier University), 2025.*
+*Developed for the ZKP module at Edinburgh Napier University.*
